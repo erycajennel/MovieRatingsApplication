@@ -167,6 +167,9 @@ function handleError(response) {
 }
 
 function formatDate(dateToFormat) {
+    if (isNaN(dateToFormat)) {
+        return "";
+    }
     var newDate = (dateToFormat.getMonth() + 1) + "/"
         + dateToFormat.getDate() + "/"
         + dateToFormat.getFullYear()
