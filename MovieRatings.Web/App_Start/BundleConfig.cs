@@ -24,7 +24,12 @@ namespace MovieRatings.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-datepicker3.css",
                       "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Scripts/bootstrap-datepicker.js",
+                "~/Scripts/knockout-{version}.js",
+                "~/Scripts/app.js"));
         }
     }
 }
